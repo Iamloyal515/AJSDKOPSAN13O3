@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Bot</title>
+  <link rel="icon" type="image/x-icon" href="ico.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap">
+  <script src="https://embed.sellpass.io/embed.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(45deg, #141c30, #1e283e);
+            color: #fff;
+            overflow-x: hidden;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .discord-logo {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        .contact-circle {
+            width: 60px;
+            height: 60px;
+            background-color: #7289DA;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .contact-circle:hover {
+            background-color: #9fa9d6;
+        }
+
+        /* Additional Styles */
+
+        section {
+            padding: 60px 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeInLeft 1s ease-in-out;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .feature-icon {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        .pricing-table {
+            display: flex;
+            justify-content: center;
+        }
+
+        .pricing-column {
+            background-color: #1e283e;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 0 20px;
+            text-align: center;
+            transition: transform 0.3s;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        .pricing-column:hover {
+            transform: translateY(-10px);
+        }
+
+        .price {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .price-details {
+            margin-bottom: 20px;
+        }
+
+        .buy-button {
+            background-color: #7289DA;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #9fa9d6;
+        }
+
+        .google-docs {
+            margin-top: 40px;
+        }
+
+        .google-docs iframe {
+            width: 100%;
+            height: 600px;
+        }
+
+        .scroll-down {
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Styles */
+
+        @media screen and (max-width: 767px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            h2 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+
+            .discord-logo {
+                width: 40px;
+                height: 40px;
+                margin-bottom: 10px;
+            }
+
+            .pricing-table {
+                flex-wrap: wrap;
+            }
+
+            .pricing-column {
+                margin: 10px;
+            }
+
+            .price {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+
+            .google-docs iframe {
+                height: 400px;
+            }
+        }
+
+        /* Animations */
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to General bot page</h1>
+        <i class="fas fa-robot fa-5x discord-logo"></i>
+<p>This bot will enhance your server and provide the best UI/UX experience for your users.</p>
+<p>Unlock unique features that will make your server stand out from the rest.</p>
+<p>Automate rewards and make your server fully equipped for seamless operation.</p>
+
+    </div>
+
+    <section>
+        <div class="container">
+            <h2>Features</h2>
+            <ul>
+<ul class="features-list">
+  <li class="feature-item">
+    <i class="fas fa-shield-alt feature-icon"></i>
+    Powerful moderation tools
+  </li>
+  <li class="feature-item">
+    <i class="fas fa-terminal feature-icon"></i>
+    Customizable commands
+  </li>
+  <li class="feature-item">
+    <i class="fas fa-cogs feature-icon"></i>
+    Advanced generator functionality
+  </li>
+  <li class="feature-item">
+    <i class="fas fa-ticket-alt feature-icon"></i>
+    Robust ticket system
+  </li>
+  <li class="feature-item">
+    <i class="fas fa-envelope-open-text feature-icon"></i>
+    Enhanced messaging capabilities
+  </li>
+  <li class="feature-item">
+    <i class="fas fa-cogs feature-icon"></i>
+    Flexible configuration options
+  </li>
+  <li class="feature-item">
+    <i class="fas fa-gamepad feature-icon"></i>
+    Streamlined invite management
+  </li>
+</ul>
+
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Pricing</h2>
+            <div class="pricing-table">
+                <div class="pricing-column">
+                    <h3>Basic</h3>
+                    <div class="price">$9.99/month</div>
+                    <div class="price-details">
+                        <p>Access to all basic features</p>
+                        <p>Support included</p>
+                    </div>
+<button class="buy-button"
+  data-sellpass-product-path="Discord-General-bot-access-monthly"
+  data-sellpass-domain="hydrolmn.sellpass.io">
+  Buy Now
+</button>
+</a>
+                </div>
+                <div class="pricing-column">
+                    <h3>Premium</h3>
+                    <div class="price">$19.99/month</div>
+                    <div class="price-details">
+                        <p>Access to all premium features</p>
+                        <p>Priority support included</p>
+                        <p>Your own bot</p>
+                    </div>
+<a href="https://t.me/hydrolmn" target="_blank">
+  <button class="buy-button">Buy Now</button>
+</a>                </div>
+                <div class="pricing-column">
+                    <h3>Enterprise</h3>
+                    <div class="price">Contact us</div>
+                    <div class="price-details">
+                        <p>Custom solutions</p>
+                        <p>Dedicated support</p>
+                        <p>Advanced integrations</p>
+                    </div>
+<a href="https://t.me/hydrolmn" target="_blank">
+  <button class="buy-button">Contact</button>
+</a>                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="google-docs">
+        <div class="container">
+            <h2>Documentation</h2>
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vS5KITwqy84ZFXglB3hfvOLVlqohr03wj6kho085xZ9or0Z_10VUzxnI5uHCnGwoPrFen1PvT-3nu5B/pub?embedded=true"></iframe>        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Contact</h2>
+            <p>For inquiries or assistance, please contact us:</p>
+            <ul>
+                <li>Email: bot@hydrolmn.com</li>
+                <li>Telegram: @hydroLMN</li>
+                <li>Discord: hydroLMN#2298</li>
+            </ul>
+        </div>
+    </section>
+
+<div class="contact-circle" href="https://discord.gg/bjXQQRYKQm" target="_blank">
+  <a href="https://discord.gg/bjXQQRYKQm" target="_blank">
+    <i class="fab fa-discord fa-2x" style="color: white;"></i>
+  </a>
+</div>
+
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
+</body>
+
+</html>
